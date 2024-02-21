@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+def calculate_x(a, b):
+    if a > b:
+        return sum(a_i**2 - b for a_i in range(1, a + 1))
+    elif a == b:
+        return -a
+    else:
+        return (a * b - 1) / b
+
+def main():
+    try:
+        a = int(input("Введіть значення a (від 1 до 100): "))
+        b = int(input("Введіть значення b (від 1 до 100): "))
+
+        if 1 <= a <= 100 and 1 <= b <= 100:
+            result = calculate_x(a, b)
+            print(f"Значення X для a={a} і b={b} дорівнює: {result}")
+        else:
+            print("Введіть коректні значення для a та b (від 1 до 100).")
+
+    except ValueError:
+        print("Введені некоректні дані. Будь ласка, введіть цілі числа.")
+
+if __name__ == "__main__":
+    main()
