@@ -1,0 +1,8 @@
+start = 500
+end = 1000
+
+kratne_5 = [x for x in range(start, end + 1) if x % 5 == 0]
+
+kratne_5 = sum(kratne_5)
+
+print(f"Сума натуральних чисел, кратних 5, в діапазоні від {start} до {end}: {kratne_5}")
