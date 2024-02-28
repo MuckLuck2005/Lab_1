@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 def calculate_x(a, b):
     if a > b:
         return sum(a_i**2 - b for a_i in range(1, a + 1))
